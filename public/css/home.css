@@ -1,8 +1,9 @@
-main{
+.home__body{
     background-color: var(--Gris-claro);
 }
 .home__header{
     background-color: var(--Amarillo);
+    padding: 2%;
 }
 
 .home__logo{
@@ -28,10 +29,10 @@ main{
     margin-top: 3px;
     }
 
-    .fa-hand-holding-dollar #home__compra{
+.fa-hand-holding-dollar #home__compra{
    font-family: Helvetica, sans-serif;
-    font-size: 18px;
-    font-weight: lighter;
+   font-size: 18px;
+   font-weight: lighter;
    display: inline;
 }
 
@@ -45,6 +46,10 @@ ul{
     font-size: 18px;
     text-align: left;
 }
+.home__nav__general {
+    display: none; /*desactiva la visualizacion de el elemento nav*/
+}
+
 
 #home__hamburguer{
     background-color: var(--Azul);
@@ -54,27 +59,48 @@ ul{
     border-radius: 8px;
     text-align: center;
     font-size: 18px;
-    margin: auto;
+    margin: auto; /* para centrar una caja dentro de su contenedor */
 
 }
 
-.home__articulos h2{
-    font-size: 24px;
-   
-    
+.home__articulos div{
+    background-color: white;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+       
 }
 
-.home__articulos p{
-    font-size: 18px;
+.home__articulos article{
+    margin-top: 10px;
+
 }
 
 .home__articulos d{
     font-size: 16px;
+    color: var(--Verde);
+   /* color:#39b54a;*/
+
 }
 
 .home__articulos h3{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+.home__articulos p{
+    font-size: 20px;
+    font-weight:bold;
+}
+.home__articulos i{
+    color: var(--Verde);
+    border: 1px solid var(--Verde);
+    border-radius: 50%;
+    padding: 2% 8% 8% 2%;
+}
+.home__articulos h4{
     font-size: 16px;
     font-weight: bold;
+    display: none;
 }
 
 .home__footer{
@@ -102,3 +128,80 @@ ul{
 .home__footer section{
     margin-bottom: 50px;
 }
+
+/*  Diseño tablet */
+
+@media(min-width: 768px){
+    .home__section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+.home__logo{
+    width: 35%;
+}
+
+.home__div{
+    width: 30%;
+    align-self: center;
+    width: 90%;
+}
+
+form{
+    width: 30%;
+    align-self: flex-start;
+    margin-top: 10px;
+    
+}
+
+#home__hamburguer{
+    display: none;
+}
+
+.home__nav__general{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 3%;
+    
+}
+
+.home__nav__general ul{
+    
+    font-size: 16px;
+    
+}
+
+.home__nav__general li{
+    margin: 5px 0
+}
+
+.home__articulos article{
+   
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+}
+
+.home__articulos h4{
+    display: block;
+}
+
+    }
+
+/* Diseño desktop */
+
+@media(min-width: 1024px){
+    .home__section,.home__nav__general{
+        max-width: 1024px;
+        margin: auto;
+    }
+    .home__nav__general li{
+        margin: 5px 10px;
+        font-size: 18px;
+    }
+
+    
+}
+

@@ -15,5 +15,14 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: 'Roboto', sans-serif;
     
+}
+main {
+    margin: auto;
+    width: 90%;
+}
+nav ul {
+    margin:0;
+    padding: 0;
 }
