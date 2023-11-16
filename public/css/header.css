@@ -1,0 +1,144 @@
+.home__header {
+    background-color: var(--Amarillo);
+    padding: 2%;
+  }
+  
+  .home__header__mobile {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .home__logo {
+    width: 40%;
+   
+  }
+  
+  .home__header__form{
+    
+    width: 40%;
+    height: 100%;
+    border-radius: 8px;
+  }
+  
+  
+  .fa-hand-holding-dollar #home__compra {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    display: block;
+  }
+  
+  .home__header__div {
+    text-align: center;
+    margin: 20px 0px 30px 0px;
+  }
+  
+  ul {
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  .home__nav__general {
+    display: none;
+  }
+  
+  #home__hamburguer {
+    background-color: var(--Azul);
+    color: white;
+    width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+  }
+  
+  /* Tablet */
+  
+  @media(min-width: 768px) {
+      .home__section {
+  
+          display: flex;
+          justify-content: space-between;
+       }
+  
+  
+      .home__logo {
+          width: 90%;
+      }
+  
+      .home__div {
+          width: 70%;
+          align-self: center;
+      }
+  
+      .home__div #home__compra {
+          font-size: 14px;
+          font-weight: lighter;
+      }
+  
+      form {
+          width: 100%;
+          align-self: center;
+          margin-top: 10px;
+          padding: 5%;
+         
+      }
+  
+      form input{
+          padding: 20px 0px;
+      }
+  
+      #home__hamburguer {
+          display: none;
+      }
+  
+      .home__nav__general {
+  
+          display: flex;
+          justify-content: space-between;
+          margin-top: 3%;
+      }
+  
+      .home__nav__general ul {
+  
+          font-size: 14px;
+          display: flex;
+      }
+  
+      .home__nav__general li {
+          margin: 5px 10px
+      }
+  }
+  
+  /* Desktop */
+  
+  @media(min-width: 1024px) {
+  
+      .home__section,
+      .home__nav__general {
+          max-width: 1024px;
+          display: flex;
+          justify-content: space-between;
+      }
+  
+      .home__nav__general {
+          margin-top: 15px;
+      }
+  
+      .home__nav__general li {
+          margin: 5px 10px;
+          font-size: 18px;
+      }
+  
+      form {
+          width: 100%;
+          padding: 5%;
+      }
+  
+      form input {
+          padding: 20px 15px;
+      }
+  
+      
+  }
